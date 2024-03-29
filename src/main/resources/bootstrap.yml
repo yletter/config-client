@@ -4,3 +4,5 @@ spring:
   cloud:
     config:
       uri: http://localhost:${config.port:8080}
+      username: user
+      password: userpassword
