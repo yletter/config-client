@@ -20,7 +20,7 @@ public class ConfigClientApplication {
 	
     @GetMapping("/owner")
     public String getOwner() {
-        return "Owner Name: " + owner;
+        return "Owner Name: " + ownerName;
     }
 
 }
