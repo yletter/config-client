@@ -6,3 +6,5 @@ spring:
       uri: http://localhost:${config.port:8080}
       username: user
       password: userpassword
+  config:
+    import: configserver:http://user:userpassword@localhost:$8080
