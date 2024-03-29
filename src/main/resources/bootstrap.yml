@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: config-client
-  config:
-    import: optional:configserver:http://user:userpassword@localhost:8080
