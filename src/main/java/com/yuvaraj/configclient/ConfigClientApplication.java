@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigClientApplication {
 
-    @Value("${owner.name}")
-    private String ownerName;
+    @Value("${mysql.hostname}")
+    private String hostName;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigClientApplication.class, args);
 	}
 	
-    @GetMapping("/owner")
-    public String getOwner() {
-        return "Owner Name: " + ownerName;
+    @GetMapping("/mysql")
+    public String getHost() {
+        return "Hostname: " + hostName;
     }
 
 }
